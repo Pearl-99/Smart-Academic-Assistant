@@ -88,7 +88,7 @@ if st.button("Get Answer"):
         # 5. Use Groq-hosted LLM via LangChain (e.g., Mixtral, Gemma, Llama3)
         load_dotenv()
 
-        model=ChatGroq(model="llama-3.3-70b-versatile")
+        model=ChatGroq(model="openai/gpt-oss-120b")
 
         # Build the prompt template
         template = """
